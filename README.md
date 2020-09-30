@@ -1,1 +1,3 @@
-# amozan
+# Amozan
+
+Amozan, an Amazon-like clone.
