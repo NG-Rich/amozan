@@ -1,0 +1,75 @@
+html {
+  scroll-behavior: smooth;
+  font-size: 1.25rem;
+  box-sizing: border-box;
+  font-family: helvetica;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+main ul {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0;
+  list-style-type: none;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas: 
+  "header"
+  "main"
+  "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100vh;
+}
+
+.header {
+  grid-area: header;
+  background-color: #232f3e;
+  color: whitesmoke;
+  font-size: 2rem;
+  height: 10vh;
+}
+
+.header a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.header nav div a:hover {
+  color: #f6bc68;
+}
+
+.header nav {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header nav div a { /* dont forget to add a separate css for nav div for mobile viewport*/
+  font-size: 1rem;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #232f3e;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  font-size: 0.75rem;
+  height: fit-content;
+  align-self: flex-end;
+}
